@@ -1,0 +1,53 @@
+/* src/pages/Articles.css */
+
+html, body {
+     scroll-behavior: smooth;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden; /* Prevent horizontal scrolling */
+   }
+   
+   .article-section {
+     min-height: 100vh; /* Each article takes full viewport height */
+     display: flex;
+     flex-direction: column;
+     justify-content: center; /* Vertically center the article content */
+     padding: 20px;
+     box-sizing: border-box;
+     scroll-snap-align: start; /* Snaps article to the top when scrolling */
+   }
+   
+   .article-card {
+     max-width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+   }
+   
+   .article-image {
+     width: 100%; /* Make the image take full width */
+     height: auto; /* Let the image maintain its aspect ratio */
+     object-fit: cover; /* Ensure the image covers the entire container */
+     margin-bottom: 20px;
+   }
+   
+   /* Article Content */
+   .article-content {
+     text-align: left;
+   }
+   
+   body {
+     scroll-snap-type: y mandatory;
+   }
+   
+   /* Media Query for Smaller Screens */
+   @media (max-width: 600px) {
+     .article-image {
+       height: 250px; /* Reduce image height on smaller screens */
+     }
+   
+     .article-section {
+       padding: 10px; /* Reduce padding for smaller screens */
+     }
+   }
+   

@@ -1,0 +1,62 @@
+/* Main Home Page Styles */
+.home-page {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+   /* About Us Section */
+.about-us-section {
+     max-width: 800px;
+     text-align: center;
+     padding: 40px 20px;
+     margin-bottom: 40px;
+     background-color: #f9f9f9; /* Light gray background */
+     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Shadow around the box */
+     border-radius: 10px; /* Rounded corners */
+     border: 1px solid #ddd; /* Light border */
+}
+
+   /* Cool font for the title */
+.about-us-title {
+     font-family: 'Roboto Slab', serif; /* Stylish font for title */
+     font-size: 2.8rem;
+     margin-bottom: 20px;
+     color: #333; /* Dark gray for contrast */
+}
+
+   /* Stylish font and spacing for the text */
+.about-us-text {
+     font-family: 'Open Sans', sans-serif; /* Modern font for body text */
+     font-size: 1.2rem;
+     line-height: 1.8;
+     color: #555; /* Slightly lighter gray */
+}
+
+   /* Full-Width Image */
+.about-us-image-container {
+     width: 100%; /* Full-width container */
+     margin-top: 40px; /* Space between text and image */
+}
+
+.about-us-image {
+     width: 100%; /* Make the image full width */
+     height: auto; /* Maintain aspect ratio */
+     object-fit: cover;
+     border-radius: 10px; /* Rounded corners on the image */
+}
+
+   /* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+     .about-us-section {
+          padding: 20px 10px;
+     }
+
+     .about-us-title {
+          font-size: 2rem;
+     }
+
+     .about-us-text {
+          font-size: 1rem;
+     }
+}
